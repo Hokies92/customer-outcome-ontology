@@ -1,0 +1,12 @@
+# Initial owner; add another independent maintainer before enforcing
+# CODEOWNER approval on PRs authored by the sole owner.
+* @Hokies92
+/ontology/ @Hokies92
+/schemas/ @Hokies92
+/reference/ @Hokies92
+/source/ @Hokies92
+/.claude/ @Hokies92
+/.github/ @Hokies92
+/CLAUDE.md @Hokies92
+/REVIEW.md @Hokies92
+/AGENTS.md @Hokies92
