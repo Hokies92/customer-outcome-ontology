@@ -1,0 +1,22 @@
+# Claude Ship approval policy. See docs/SHIP_GOVERNANCE.md.
+# Observe-only pilot: no AI approvals and no merges authorized by this file.
+version: 1
+mode: observe
+rules:
+  - purpose: "All COO changes require an independent human reviewer; Claude may comment but never approve."
+    paths: ["**"]
+    verdict:
+      claude: comments
+      seats:
+        - count: 1
+          from: [humans, "!pr/authors"]
+    advisory: [claude/code_review]
+  - purpose: "Ontology, source, code, and governance changes require two independent human reviewers and applicable CODEOWNER review."
+    paths: ["ontology/**", "schemas/**", "reference/**", "source/**", "scripts/**", ".claude/**", ".github/**", "CODEOWNERS", "CLAUDE.md", "REVIEW.md", "AGENTS.md"]
+    nested: inherit
+    verdict:
+      claude: comments
+      seats:
+        - count: 2
+          from: [humans, "!pr/authors"]
+    advisory: [claude/code_review]
