@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "id": "crosswalk-current-to-future",
+  "from": "model-view-2006-current",
+  "to": "model-view-2006-future",
+  "comparison_kind": "same_era_different_viewpoints",
+  "analyst_interpretation": true,
+  "mappings": [
+    {
+      "from": "CS.market",
+      "to": "FS.forces",
+      "relation": "made_explicit",
+      "why": "Open market-force prompt is developed into specific categories."
+    },
+    {
+      "from": "CS.account",
+      "to": "FS.cube",
+      "relation": "abstracted_into",
+      "why": "Open-ended account description becomes role/theme/buying context; not all real account information disappears."
+    },
+    {
+      "from": "CS.account",
+      "to": "FS.reality",
+      "relation": "retained_at_interface",
+      "why": "Account-specific personalities/politics/risks can remain relevant to the situated conversation."
+    },
+    {
+      "from": "CS.portfolio",
+      "to": null,
+      "relation": "outside_customer_MODEL",
+      "why": "Portfolio belongs in supplier MAP, not in customer-defined MODEL."
+    },
+    {
+      "from": "CS.content",
+      "to": null,
+      "relation": "outside_customer_MODEL",
+      "why": "Supplier content remains in MAP; omission from customer MODEL is not deletion."
+    },
+    {
+      "from": "CS.who",
+      "to": "FS.converse",
+      "relation": "conversation_formalized",
+      "why": "Who/what/where preparation becomes more structured TPC criteria."
+    }
+  ]
+}

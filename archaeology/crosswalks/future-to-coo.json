@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "id": "crosswalk-future-to-2026-coo",
+  "from": "model-view-2006-future",
+  "to": "model-interpretation-2026-coo-v0.1.0",
+  "comparison_kind": "historical_source_to_modern_interpretation",
+  "analyst_interpretation": true,
+  "mappings": [
+    {
+      "from": "FS.aims",
+      "to": "COO.BusinessObjective",
+      "relation": "formalized",
+      "why": "Goals/class definitions are analyst semantics, not source-authored ontology."
+    },
+    {
+      "from": "FS.drivers",
+      "to": "COO.BusinessDriver",
+      "relation": "formalized",
+      "why": "Original driver labels remain drivers, not observed outcomes."
+    },
+    {
+      "from": "FS.drivers",
+      "to": "COO.DesiredOutcome",
+      "relation": "introduced_distinction",
+      "why": "DesiredOutcome is a 2026 analyst class, not a 2006 label or a renamed driver."
+    },
+    {
+      "from": "FS.cube",
+      "to": "COO.DecisionContext",
+      "relation": "formalized",
+      "why": "An uncalibrated categorical decision context becomes explicit class."
+    },
+    {
+      "from": "FS.converse",
+      "to": null,
+      "relation": "outside_outcome_subontology",
+      "why": "Conversation is adjacent to COO in the wider commercial system, not identical to customer outcomes."
+    }
+  ]
+}

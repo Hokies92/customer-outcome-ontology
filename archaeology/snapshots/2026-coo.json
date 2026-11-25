@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "id": "model-interpretation-2026-coo-v0.1.0",
+  "kind": "analyst_reconstruction",
+  "view": "customer_outcome_subontology",
+  "original": null,
+  "recorded_at": "2026-11-24",
+  "source": {
+    "id": "ANALYST-COO-0.1.0",
+    "filename": null,
+    "sha256": null,
+    "derived_from": [
+      "A-002",
+      "A-003"
+    ],
+    "historical_influence_claim": false
+  },
+  "modeled_object": "customer-desired states and their context, not the whole customer-world MODEL",
+  "purpose": "distinguish outcome from driver, goal, strategy, proposed capability and realized benefit",
+  "boundary": {
+    "inside": [
+      "customer context, objective, strategy, driver",
+      "desired and observed outcomes",
+      "outcome measure, assertion and evidence"
+    ],
+    "outside": [
+      "supplier capabilities and MAP bridge",
+      "conversation and contract"
+    ],
+    "interface": [
+      "supplier capability may contribute to customer outcome, conditionally"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "COO.CustomerOrganization",
+      "label": "CustomerOrganization",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.EnvironmentInfluence",
+      "label": "EnvironmentInfluence",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.BusinessObjective",
+      "label": "BusinessObjective",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.BusinessStrategy",
+      "label": "BusinessStrategy",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.Initiative",
+      "label": "Initiative",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.BusinessDriver",
+      "label": "BusinessDriver",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.StakeholderRole",
+      "label": "StakeholderRole",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.DecisionContext",
+      "label": "DecisionContext",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.DecisionProcess",
+      "label": "DecisionProcess",
+      "epistemic": "analyst_formalization_of_source_context"
+    },
+    {
+      "id": "COO.CustomerCapability",
+      "label": "CustomerCapability",
+      "epistemic": "analyst_proposed"
+    },
+    {
+      "id": "COO.Constraint",
+      "label": "Constraint",
+      "epistemic": "analyst_proposed"
+    },
+    {
+      "id": "COO.DesiredOutcome",
+      "label": "DesiredOutcome",
+      "epistemic": "analyst_proposed"
+    },
+    {
+      "id": "COO.ObservedOutcome",
+      "label": "ObservedOutcome",
+      "epistemic": "analyst_proposed"
+    },
+    {
+      "id": "COO.OutcomeMeasure",
+      "label": "OutcomeMeasure",
+      "epistemic": "analyst_proposed"
+    },
+    {
+      "id": "COO.EvidenceItem",
+      "label": "EvidenceItem",
+      "epistemic": "analyst_proposed"
+    },
+    {
+      "id": "COO.OutcomeAssertion",
+      "label": "OutcomeAssertion",
+      "epistemic": "analyst_proposed"
+    }
+  ],
+  "unresolved": [
+    "Who has authority to state organizational customer desires?",
+    "Is DesiredOutcome a state or state change?",
+    "How should contradictory stakeholder objectives be represented?"
+  ]
+}
