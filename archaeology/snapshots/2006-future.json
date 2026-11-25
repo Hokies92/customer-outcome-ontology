@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "id": "model-view-2006-future",
+  "kind": "historical_view",
+  "view": "intended_future",
+  "original": {
+    "family": "Customer-Centered Conversation Solution Blueprint V1.1",
+    "copyright_year": 2006,
+    "exact_creation_date": null,
+    "precision": "copyright_year_only"
+  },
+  "recorded_at": "2026-11-24",
+  "source": {
+    "id": "A-003",
+    "filename": "future state blueprint.png",
+    "sha256": "6e3c45a2e5f94c7a1d95c845225eb8649f354212c46e68c0c0da97268f0facda"
+  },
+  "modeled_object": "bounded enterprise customer business and IT decision world",
+  "purpose": "provide reusable customer reference categories for meaningful conversations",
+  "boundary": {
+    "inside": [
+      "market environment and executive aims",
+      "strategies, stakeholder role classes and CIO services",
+      "business drivers",
+      "Who × Business Theme × Buying Process",
+      "PROFILE / PREDICT / CONVERSE"
+    ],
+    "outside": [
+      "supplier products and content catalog belong to MAP",
+      "individual account politics and people are not generic cube axes",
+      "contract execution and realized economic consequences"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "FS.forces",
+      "label": "Economy, Government, Competitors, Customers, Suppliers, Shareholders",
+      "epistemic": "source_labels"
+    },
+    {
+      "id": "FS.aims",
+      "label": "Value, Growth, Margin, Shareholder Value; Initiative 1–5 placeholders",
+      "epistemic": "source_labels"
+    },
+    {
+      "id": "FS.strategies",
+      "label": "Eight Business Strategies",
+      "epistemic": "source_labels"
+    },
+    {
+      "id": "FS.roles",
+      "label": "CEO / CFO / CIO / VP roles; Speed, Quality, Cost",
+      "epistemic": "source_labels"
+    },
+    {
+      "id": "FS.drivers",
+      "label": "Ten Business Drivers",
+      "epistemic": "source_labels"
+    },
+    {
+      "id": "FS.cube",
+      "label": "Role × Business Theme × Buying Process",
+      "epistemic": "source_observed_structure"
+    },
+    {
+      "id": "FS.converse",
+      "label": "The Perfect Conversation criteria",
+      "epistemic": "source_labels"
+    },
+    {
+      "id": "FS.reality",
+      "label": "Organizational Realities at MATCH interface",
+      "epistemic": "source_labels"
+    }
+  ],
+  "unresolved": [
+    "Buying-process stage names not fully specified",
+    "Causal meaning of highlighted yellow paths is not empirically established",
+    "Is this reference generally reusable beyond enterprise IT?"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "id": "model-view-2006-current",
+  "kind": "historical_view",
+  "view": "current_state",
+  "original": {
+    "family": "Customer-Centered Conversation Solution Blueprint V1.1",
+    "copyright_year": 2006,
+    "exact_creation_date": null,
+    "precision": "copyright_year_only"
+  },
+  "recorded_at": "2026-11-24",
+  "source": {
+    "id": "A-002",
+    "filename": "curent state blueprint.png",
+    "sha256": "dac9963a15393403899ef05499dda7b69f1c56ea94a89736feb709988408f2cf"
+  },
+  "modeled_object": "whole supplier–customer commercial world",
+  "purpose": "represent supplier and customer structures, content flows, conversation, economy and diagnosed problems",
+  "boundary": {
+    "inside": [
+      "market and investor forces",
+      "supplier executives, portfolio and specialized functions",
+      "communication and content",
+      "customer hierarchy, account knowledge and people network",
+      "conversation and potential outcomes"
+    ],
+    "outside": [
+      "actual person-level account census",
+      "verified cost, throughput, and transaction measurements"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "CS.market",
+      "label": "Market Forces?",
+      "epistemic": "source_label"
+    },
+    {
+      "id": "CS.supplier",
+      "label": "Supplier economic and organizational structure",
+      "epistemic": "analyst_grouping"
+    },
+    {
+      "id": "CS.portfolio",
+      "label": "Portfolio and business units",
+      "epistemic": "source_label"
+    },
+    {
+      "id": "CS.content",
+      "label": "Content and broadcasting",
+      "epistemic": "source_label"
+    },
+    {
+      "id": "CS.interface",
+      "label": "Conversation / Impact vs. Investment",
+      "epistemic": "source_label"
+    },
+    {
+      "id": "CS.customer_network",
+      "label": "People and Pain Chains?",
+      "epistemic": "source_label"
+    },
+    {
+      "id": "CS.account",
+      "label": "Account Knowledge / Current Environment",
+      "epistemic": "source_label"
+    },
+    {
+      "id": "CS.who",
+      "label": "Who / What / Where in buying process",
+      "epistemic": "source_label"
+    }
+  ],
+  "unresolved": [
+    "Which source lines signify actual dependencies?",
+    "Which customer details should be generalized, preserved as instance evidence, or left at the interface?"
+  ]
+}
